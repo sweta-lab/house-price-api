@@ -8,7 +8,7 @@ from src.monitoring.logger import setup_logger
 app = Flask(__name__)
 logger = setup_logger()
 
-model_path = 'models\\house_price_model.pkl'
+model_path = 'models/house_price_model.pkl'
 model = load_model(model_path)
 
 @app.route('/predict', methods=['POST'])
