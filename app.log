@@ -122,3 +122,5 @@ AttributeError: 'NoneType' object has no attribute 'info'
 2025-08-13 08:28:31,847 - INFO - Received data for prediction: {'size': 1400, 'bedrooms': 3}
 2025-08-13 08:28:31,884 - INFO - Prediction made: 247406.1604584527
 2025-08-13 08:28:32,076 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-13 09:03:55,052 - INFO - Received data for prediction: {'size': 1400, 'bedrooms': 3}
+2025-08-13 09:03:55,061 - INFO - Prediction made: 247406.1604584527
