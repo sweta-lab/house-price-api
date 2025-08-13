@@ -100,7 +100,8 @@ For advanced monitoring, you can integrate third-party services, but for most be
 
 Example post request in PowerShell:
 
-```Invoke-WebRequest -Uri https://house-price-api-rfod.onrender.com/predict -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{"size": 1400, "bedrooms": 3}'
+```
+Invoke-WebRequest -Uri https://house-price-api-rfod.onrender.com/predict -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{"size": 1400, "bedrooms": 3}'
 ```
 
 ## License
