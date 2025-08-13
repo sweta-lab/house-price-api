@@ -75,6 +75,34 @@ The application includes basic logging functionality to monitor API usage and mo
 
 The project can be deployed to a cloud platform using the provided `deploy.yaml` configuration file. Follow the instructions in that file to set up the necessary resources.
 
+## Steps to Deploy
+
+1. Push Your Code to GitHub
+Create a new GitHub repository.
+Push your project code to it.
+
+2. Deploy on Render
+Go to https://render.com and sign up/log in.
+Click "New +" → "Web Service".
+Connect your GitHub repo.
+For Environment, choose Docker.
+Set the Port to 5000.
+Click Create Web Service.
+Render will build your Docker image and deploy your app.
+You’ll get a public URL like https://your-app.onrender.com.
+
+3. Test Your API
+Once deployed, send a POST request to https://your-app.onrender.com/predict as you did locally.
+
+4. Monitoring and Logs
+Render provides logs in the dashboard for free.
+For advanced monitoring, you can integrate third-party services, but for most beginners, Render’s built-in logs are enough.
+
+Example post request in PowerShell:
+
+```Invoke-WebRequest -Uri https://house-price-api-rfod.onrender.com/predict -Method POST -Headers @{"Content-Type" = "application/json"} -Body '{"size": 1400, "bedrooms": 3}'
+```
+
 ## License
 
 This project is open-source and available under the MIT License.
