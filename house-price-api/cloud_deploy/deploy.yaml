@@ -1,0 +1,23 @@
+resources:
+  - name: house-price-api
+    type: deployment
+    properties:
+      replicas: 2
+      container:
+        image: your-docker-repo/house-price-api:latest
+        ports:
+          - containerPort: 5000
+        env:
+          - name: MODEL_PATH
+            value: "/app/model/house_price_model.pkl"
+          - name: LOG_LEVEL
+            value: "INFO"
+      monitoring:
+        enabled: true
+        logLevel: "INFO"
+        logDestination: "cloudwatch"  # or any other logging service you prefer
+      healthCheck:
+        path: "/health"
+        interval: 30s
+        timeout: 5s
+        retries: 3

@@ -1,0 +1,124 @@
+2025-08-12 12:47:03,151 - INFO - Logger is set up.
+2025-08-12 12:47:41,576 - INFO - Logger is set up.
+2025-08-12 12:47:43,623 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.51:5000
+2025-08-12 12:47:43,623 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 12:48:17,315 - INFO - 127.0.0.1 - - [12/Aug/2025 12:48:17] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-08-12 12:48:17,968 - INFO - 127.0.0.1 - - [12/Aug/2025 12:48:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-12 12:48:47,071 - INFO - 127.0.0.1 - - [12/Aug/2025 12:48:47] "[33mGET / HTTP/1.1[0m" 404 -
+2025-08-12 12:49:05,722 - INFO - 127.0.0.1 - - [12/Aug/2025 12:49:05] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-08-13 08:13:07,117 - INFO - Logger is set up.
+2025-08-13 08:13:10,873 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.51:5000
+2025-08-13 08:13:10,873 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 08:14:18,618 - INFO - 127.0.0.1 - - [13/Aug/2025 08:14:18] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+2025-08-13 08:14:53,875 - INFO - 127.0.0.1 - - [13/Aug/2025 08:14:53] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+2025-08-13 08:15:18,659 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\sweta\Documents\Python_Scripts\house-price-api\house-price-api\src\api\main.py", line 17, in predict
+    logger.info("Received data for prediction: %s", data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2025-08-13 08:15:18,726 - INFO - 127.0.0.1 - - [13/Aug/2025 08:15:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:23:17,866 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\sweta\Documents\Python_Scripts\house-price-api\house-price-api\src\api\main.py", line 17, in predict
+    logger.info("Received data for prediction: %s", data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2025-08-13 08:23:17,881 - INFO - 127.0.0.1 - - [13/Aug/2025 08:23:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:23:30,137 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\sweta\Documents\Python_Scripts\house-price-api\house-price-api\src\api\main.py", line 17, in predict
+    logger.info("Received data for prediction: %s", data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2025-08-13 08:23:30,138 - INFO - 127.0.0.1 - - [13/Aug/2025 08:23:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:24:29,042 - INFO - Logger is set up.
+2025-08-13 08:24:33,641 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.51:5000
+2025-08-13 08:24:33,641 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 08:24:36,809 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\sweta\Documents\Python_Scripts\house-price-api\house-price-api\src\api\main.py", line 17, in predict
+    logger.info("Received data for prediction: %s", data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2025-08-13 08:24:36,815 - INFO - 127.0.0.1 - - [13/Aug/2025 08:24:36] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:24:48,255 - ERROR - Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sweta\AppData\Roaming\Python\Python38\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\sweta\Documents\Python_Scripts\house-price-api\house-price-api\src\api\main.py", line 17, in predict
+    logger.info("Received data for prediction: %s", data)
+AttributeError: 'NoneType' object has no attribute 'info'
+2025-08-13 08:24:48,258 - INFO - 127.0.0.1 - - [13/Aug/2025 08:24:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:26:27,350 - INFO - Logger is set up.
+2025-08-13 08:26:29,208 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.51:5000
+2025-08-13 08:26:29,208 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 08:27:15,965 - INFO - Logger is set up.
+2025-08-13 08:27:17,393 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.178.51:5000
+2025-08-13 08:27:17,394 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 08:27:17,415 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-13 08:27:18,468 - INFO - Logger is set up.
+2025-08-13 08:27:19,812 - WARNING -  * Debugger is active!
+2025-08-13 08:27:19,829 - INFO -  * Debugger PIN: 140-726-391
+2025-08-13 08:27:24,928 - INFO - 127.0.0.1 - - [13/Aug/2025 08:27:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-08-13 08:28:12,833 - INFO -  * Detected change in 'C:\\ProgramData\\Anaconda3\\Lib\\logging\\__init__.py', reloading
+2025-08-13 08:28:13,972 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-13 08:28:14,684 - INFO - Logger is set up.
+2025-08-13 08:28:15,778 - WARNING -  * Debugger is active!
+2025-08-13 08:28:15,787 - INFO -  * Debugger PIN: 140-726-391
+2025-08-13 08:28:23,699 - INFO -  * Detected change in 'C:\\Users\\sweta\\Documents\\Python_Scripts\\house-price-api\\house-price-api\\src\\monitoring\\logger.py', reloading
+2025-08-13 08:28:23,701 - INFO -  * Detected change in 'C:\\Users\\sweta\\Documents\\Python_Scripts\\house-price-api\\house-price-api\\src\\monitoring\\logger.py', reloading
+2025-08-13 08:28:23,702 - INFO -  * Detected change in 'C:\\Users\\sweta\\Documents\\Python_Scripts\\house-price-api\\house-price-api\\src\\monitoring\\logger.py', reloading
+2025-08-13 08:28:24,262 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-13 08:28:31,847 - INFO - Received data for prediction: {'size': 1400, 'bedrooms': 3}
+2025-08-13 08:28:31,884 - INFO - Prediction made: 247406.1604584527
+2025-08-13 08:28:32,076 - INFO -  * Restarting with watchdog (windowsapi)
